@@ -4,67 +4,79 @@
     box-sizing: border-box;
 }
 
+/* Corpo e estrutura básica */
 body {
     font-family: Arial, sans-serif;
-    background-color: #e6f2e6;
-    color: #2f4f2f;
+    background-color: #f4f4f4;
+    color: #333;
     line-height: 1.6;
 }
 
 header {
     background-color: #4CAF50;
-    color: white;
-    padding: 20px 0;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
 }
 
-main {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 0 20px;
+header .logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seções do site */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2 {
-    color: #27632a;
-    margin-bottom: 10px;
+    color: #4CAF50;
 }
 
-section {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
+/* Estilos para as imagens da galeria */
+.galeria-imagens {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.galeria-imagens img {
+    width: 300px;
+    height: auto;
     border-radius: 8px;
-    box-shadow: 0 0 10px #a6c9a6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
+/* Rodapé */
 footer {
     text-align: center;
-    padding: 15px 0;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
     position: fixed;
-    width: 100%;
     bottom: 0;
-}
-
-.btn-participar {
-    display: inline-block;
-    background-color: #27632a;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 15px;
-    transition: background-color 0.3s ease;
-}
-
-.btn-participar:hover {
-    background-color: #1e4720;
-    cursor: pointer;
+    width: 100%;
 }
